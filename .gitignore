@@ -1,0 +1,7 @@
+.vercel
+node_modules/
+.cache/
+dist/
+build/
+*.log
+.env
