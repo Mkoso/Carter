@@ -7,7 +7,9 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "server": "node server.js",
-    "dev": "nodemon index.js"
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -17,6 +19,7 @@
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.12",
+    "@supabase/supabase-js": "^2.50.0",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

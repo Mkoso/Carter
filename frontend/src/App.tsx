@@ -16,11 +16,11 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen bg-gray-900">
-        <Routes>
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
+          <Routes>
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
 
-          <Route element={<PrivateRoute />}>
+            <Route element={<PrivateRoute />}>
             <Route element={<Layout />}>
               <Route path="/" element={<Dashboard />} />
               <Route path="/call-analysis" element={<CallAnalysis />} />
@@ -30,8 +30,8 @@ const App = () => {
               <Route path="/my-performance" element={<Performance />} />
               <Route path="/settings" element={<Settings />} />
             </Route>
-          </Route>
-        </Routes>
+            </Route>
+          </Routes>
       </div>
     </Router>
   );

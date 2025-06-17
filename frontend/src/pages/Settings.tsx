@@ -420,7 +420,7 @@ function SecurityAccess() {
           <input type="checkbox" checked={gdpr} onChange={e => setGdpr(e.target.checked)} /> GDPR
         </label>
       </div>
-      <div>
+    <div>
         <h3 className="text-md font-semibold mb-2">User audit log</h3>
         <table className="w-full text-xs">
           <thead>

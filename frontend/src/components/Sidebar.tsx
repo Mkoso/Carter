@@ -67,14 +67,14 @@ export default function Sidebar() {
         >
           <span>Performance</span>
         </Link>
-        <Link
+            <Link
           to="/settings"
           className={`flex items-center gap-3 px-4 py-2 rounded-md transition-colors ${
             isActive('/settings') ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800'
-          }`}
-        >
+              }`}
+            >
           <span>Settings</span>
-        </Link>
+            </Link>
       </nav>
       <div className="p-4 border-t border-gray-800">
         <div className="flex items-center gap-3 px-4 py-2">

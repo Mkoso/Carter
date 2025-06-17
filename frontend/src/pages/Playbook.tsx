@@ -382,7 +382,7 @@ export default function Playbook() {
                     <input type="checkbox" checked={modalData?.showIn?.deals} onChange={e => handleModalChange('showIn', { ...modalData.showIn, deals: e.target.checked })} /> Deals
                   </label>
                 </div>
-                <div>
+    <div>
                   <label className="block text-sm mb-1">Tärkeys</label>
                   <select
                     className="bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white"
